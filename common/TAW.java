@@ -44,10 +44,8 @@ public class TAW {
 	@Init
 	public void load(FMLInitializationEvent event) {
 		proxy.registerRenderers();
-		//ItemsOld.addItems();
 		Blocks.addBlocks();
 		Items.registerAllItems();
-		//Items.addToolsetRecipes(Block.obsidian, Items.shovelObsidian, Items.pickaxeObsidian, Items.axeObsidian, Items.swordObsidian, Items.hoeObsidian);
 		addRecipes();
 	}
 	
