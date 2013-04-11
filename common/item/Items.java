@@ -18,10 +18,10 @@ public class Items {
 	
 	// Obsidian tools, with a harvest speed of 7.75 -- almost as fast as diamond (which is 8)
 	public static int ObsidianHarvestLevel = 3;
-	public static EnumToolMaterial ObsidianTools = EnumHelper.addToolMaterial("OBSIDIAN", ObsidianHarvestLevel, 1561, 7.75F, 2, 10);
-	// Glass tools, almost equivalent to iron but with a higher enchantability
+	public static EnumToolMaterial ObsidianTools = EnumHelper.addToolMaterial("OBSIDIAN", ObsidianHarvestLevel, 1561, 8.0F, 2, 10);
+	// Glass tools; basically halfway between iron and diamond but with a higher enchantability than both
 	public static int GlassHarvestLevel = 3;
-	public static EnumToolMaterial GlassTools = EnumHelper.addToolMaterial("GLASS", GlassHarvestLevel, 250, 6.0F, 2, 18);
+	public static EnumToolMaterial GlassTools = EnumHelper.addToolMaterial("GLASS", GlassHarvestLevel, 250, 7.5F, 2, 18);
 	
 	public static Item shovelObsidian = new ItemSpade(1551, ObsidianTools).setIconIndex(0).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Obsidian Shovel");
 	public static Item pickaxeObsidian = new ItemPickaxe(1552, ObsidianTools).setIconIndex(1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Obsidian Pickaxe");
