@@ -6,12 +6,14 @@ The currently implemented features for Mincraft are as follows:
   * "Industrial Glass" blocks made from smelting "Hardy Glass Materials"
   * The recipe for "Industrial Glass Materials" (iron ingot surrounded by glass blocks)
 * Obsidian tools
+* Ender tools (made of Eyes of Ender)
 
 ##Planned Features
-I am planning on adding the following:
-* Ender tools, made from Ender Pearls. The pickaxe will be able to harvest monster spawners
-* Possibly emerald tools 
-* Possibly ice tools as an alternative to wood tools
+I am planning on adding the following (in order of priority):
+1. The Ender Pickaxe will be able to harvest monster spawners
+2. 
+   * Possibly emerald tools 
+   * Possibly ice tools as an alternative to wood tools
 
 #Installation
 To compile this mod from source, you will need a copy of the MCP (Minecraft coder-pack) ready,
