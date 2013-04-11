@@ -20,8 +20,11 @@ public class Items {
 	public static int ObsidianHarvestLevel = 3;
 	public static EnumToolMaterial ObsidianTools = EnumHelper.addToolMaterial("OBSIDIAN", ObsidianHarvestLevel, 1561, 8.0F, 2, 10);
 	// Glass tools; basically halfway between iron and diamond but with a higher enchantability than both
-	public static int GlassHarvestLevel = 3;
+	public static int GlassHarvestLevel = 2;
 	public static EnumToolMaterial GlassTools = EnumHelper.addToolMaterial("GLASS", GlassHarvestLevel, 250, 7.5F, 2, 18);
+	// Ender tools
+	public static int EnderHarvestLevel = 3;
+	public static EnumToolMaterial EnderTools = EnumHelper.addToolMaterial("ENDER", EnderHarvestLevel, 1561, 7.75F, 3, 22);
 	
 	public static Item shovelObsidian = new ItemSpade(1551, ObsidianTools).setIconIndex(0).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Obsidian Shovel");
 	public static Item pickaxeObsidian = new ItemPickaxe(1552, ObsidianTools).setIconIndex(1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Obsidian Pickaxe");
