@@ -10,6 +10,7 @@ The currently implemented features for Mincraft are as follows:
 
 ##Planned Features
 I am planning on adding the following (in order of priority):
+
 1. The Ender Pickaxe will be able to harvest monster spawners
 2. 
    * Possibly emerald tools 
