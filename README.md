@@ -15,5 +15,5 @@ I am planning on adding the following:
 
 #Installation
 To compile this mod from source, you will need a copy of the MCP (Minecraft coder-pack) ready,
-version 4.7.*. Inside mcp/src, create the path jw/taw/ and copy the downloaded source into it.
-You should now be ready to build and run in the IDE of your choice! 
+version 4.7.*. Inside mcp/src/minecraft, create the path jw/taw/ and copy the downloaded source into it.
+You should now be ready to build and run in the IDE of your choice!
