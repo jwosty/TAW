@@ -12,12 +12,12 @@ import net.minecraft.src.ModLoader;
 public class Blocks {
 	private Blocks() {}
 	
-	public static Block hardyGlass = (new HardyGlass(1551, 17, Material.glass))
+	public static Block hardyGlass = (new IndustrialGlass(1551, 17, Material.glass))
 			.setHardness(1.0F).setStepSound(Block.soundGlassFootstep)
-			.setBlockName("hardyGlass").setCreativeTab(CreativeTabs.tabDecorations);
+			.setBlockName("industrialGlass").setCreativeTab(CreativeTabs.tabDecorations);
 	
 	public static void addBlocks() {
-		GameRegistry.registerBlock(hardyGlass, "hardyGlass");
-		LanguageRegistry.addName(hardyGlass, "Hardy Glass");
+		GameRegistry.registerBlock(hardyGlass, "industrialGlass");
+		LanguageRegistry.addName(hardyGlass, "Industrial Glass");
 	}
 }

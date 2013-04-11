@@ -32,7 +32,7 @@ public class Items {
 	public static Item swordObsidian = new ItemSword(1554, ObsidianTools).setIconIndex(3).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianSword");
 	public static Item hoeObsidian = new ItemHoe(1555, ObsidianTools).setIconIndex(4).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianHoe");
 	
-	public static Item hardyGlassMaterials = new Item(1556).setIconIndex(16).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("hardyGlassMaterials");
+	public static Item industrialGlassMaterials = new Item(1556).setIconIndex(16).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("industrialGlassMaterials");
 	public static Item shovelGlass = new ItemSpade(1557, GlassTools).setIconIndex(5).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassShovel");
 	public static Item pickaxeGlass = new ItemPickaxe(1558, GlassTools).setIconIndex(6).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassPickaxe");
 	public static Item axeGlass = new ItemAxe(1559, GlassTools).setIconIndex(7).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassAxe");
@@ -57,12 +57,12 @@ public class Items {
 	}
 	
 	public static void addItems() {
-		LanguageRegistry.addName(hardyGlassMaterials, "Hardy Glass Materials");
+		LanguageRegistry.addName(industrialGlassMaterials, "Industrial Glass Materials");
 	
 	}
 	
 	public static void addItemRecipes() {
-		GameRegistry.addRecipe(new ItemStack(hardyGlassMaterials, 4), "XXX", "XYX", "XXX", 'X', Block.glass, 'Y', Item.ingotIron);
+		GameRegistry.addRecipe(new ItemStack(industrialGlassMaterials, 4), "XXX", "XYX", "XXX", 'X', Block.glass, 'Y', Item.ingotIron);
 	}
 	
 	// Register all the new tools into the game

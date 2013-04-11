@@ -3,8 +3,8 @@ Welcome to my humble Minecraft Tools-and-Weapons (TAW) mod!
 #Features
 The currently implemented features for Mincraft are as follows:
 * Glass tools:
-  * "Hardy Glass" blocks made from smelting "Hardy Glass Materials"
-  * The recipe for "Hardy Glass Materials" (iron ingot surrounded by glass blocks)
+  * "Industrial Glass" blocks made from smelting "Hardy Glass Materials"
+  * The recipe for "Industrial Glass Materials" (iron ingot surrounded by glass blocks)
 * Obsidian tools
 
 ##Planned Features

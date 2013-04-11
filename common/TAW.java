@@ -54,7 +54,7 @@ public class TAW {
 		Block obs = Block.obsidian;
 		Item stk = Item.stick;
 		
-		GameRegistry.addSmelting(Items.hardyGlassMaterials.itemID, new ItemStack(Blocks.hardyGlass), 0.1f);
+		GameRegistry.addSmelting(Items.industrialGlassMaterials.itemID, new ItemStack(Blocks.hardyGlass), 0.1f);
 	}
 	
 	@PostInit
