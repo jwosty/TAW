@@ -55,9 +55,7 @@ public class TAW {
 	private void addRecipes() {
 		Block obs = Block.obsidian;
 		Item stk = Item.stick;
-		//Item hdm = ItemsOld.hardyGlassMaterials;
 		
-		//GameRegistry.addRecipe(new ItemStack(hdm, 4), "XXX", "XYX", "XXX", 'X', Block.glass, 'Y', Item.ingotIron);
 		GameRegistry.addSmelting(Items.hardyGlassMaterials.itemID, new ItemStack(Blocks.hardyGlass), 0.1f);
 	}
 	
