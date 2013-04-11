@@ -26,18 +26,24 @@ public class Items {
 	public static int EnderHarvestLevel = 3;
 	public static EnumToolMaterial EnderTools = EnumHelper.addToolMaterial("ENDER", EnderHarvestLevel, 1561, 7.75F, 3, 22);
 	
-	public static Item shovelObsidian = new ItemSpade(1551, ObsidianTools).setIconIndex(0).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Obsidian Shovel");
-	public static Item pickaxeObsidian = new ItemPickaxe(1552, ObsidianTools).setIconIndex(1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Obsidian Pickaxe");
-	public static Item axeObsidian = new ItemAxe(1553, ObsidianTools).setIconIndex(2).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Obsidian Axe");
-	public static Item swordObsidian = new ItemSword(1554, ObsidianTools).setIconIndex(3).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Obsidian Sword");
-	public static Item hoeObsidian = new ItemHoe(1555, ObsidianTools).setIconIndex(4).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Obsidian Hoe");
+	public static Item shovelObsidian = new ItemSpade(1551, ObsidianTools).setIconIndex(0).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianShovel");
+	public static Item pickaxeObsidian = new ItemPickaxe(1552, ObsidianTools).setIconIndex(1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianPickaxe");
+	public static Item axeObsidian = new ItemAxe(1553, ObsidianTools).setIconIndex(2).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianAxe");
+	public static Item swordObsidian = new ItemSword(1554, ObsidianTools).setIconIndex(3).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianSword");
+	public static Item hoeObsidian = new ItemHoe(1555, ObsidianTools).setIconIndex(4).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianHoe");
 	
 	public static Item hardyGlassMaterials = new Item(1556).setIconIndex(16).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("hardyGlassMaterials");
-	public static Item shovelGlass = new ItemSpade(1557, GlassTools).setIconIndex(5).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Glass Shovel");
-	public static Item pickaxeGlass = new ItemPickaxe(1558, GlassTools).setIconIndex(6).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Glass Pickaxe");
-	public static Item axeGlass = new ItemAxe(1559, GlassTools).setIconIndex(7).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Glass Axe");
-	public static Item swordGlass = new ItemSword(1560, GlassTools).setIconIndex(8).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Glass Sword");
-	public static Item hoeGlass = new ItemHoe(1561, GlassTools).setIconIndex(9).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("Glass Hoe");
+	public static Item shovelGlass = new ItemSpade(1557, GlassTools).setIconIndex(5).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassShovel");
+	public static Item pickaxeGlass = new ItemPickaxe(1558, GlassTools).setIconIndex(6).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassPickaxe");
+	public static Item axeGlass = new ItemAxe(1559, GlassTools).setIconIndex(7).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassAxe");
+	public static Item swordGlass = new ItemSword(1560, GlassTools).setIconIndex(8).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassSword");
+	public static Item hoeGlass = new ItemHoe(1561, GlassTools).setIconIndex(9).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassHoe");
+	
+	public static Item shovelEnder = new ItemSpade(1562, EnderTools).setIconIndex(10).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("enderShovel");
+	public static Item pickaxeEnder = new ItemPickaxe(1563, EnderTools).setIconIndex(11).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("enderPickaxe");
+	public static Item axeEnder = new ItemAxe(1564, EnderTools).setIconIndex(12).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("enderAxe");
+	public static Item swordEnder = new ItemSword(1565, EnderTools).setIconIndex(13).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("enderSword");
+	public static Item hoeEnder = new ItemSword(1566, EnderTools).setIconIndex(14).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("enderHoe");
 	
 	// Loads all the new items and tools
 	public static void registerAllItems() {
@@ -65,6 +71,8 @@ public class Items {
 				shovelObsidian, pickaxeObsidian, axeObsidian, swordObsidian, hoeObsidian);
 		registerToolset(Blocks.hardyGlass, "Glass", GlassHarvestLevel,
 				shovelGlass, pickaxeGlass, axeGlass, swordGlass, hoeGlass);
+		registerToolset(Item.eyeOfEnder, "Ender", EnderHarvestLevel,
+				shovelEnder, pickaxeEnder, axeEnder, swordEnder, hoeEnder);
 	}
 	
 	// Register a complete tool set and its standard crafting recipes
