@@ -12,7 +12,7 @@ import net.minecraft.src.ModLoader;
 public class Blocks {
 	private Blocks() {}
 	
-	public static Block hardyGlass = (new IndustrialGlass(1551, 17, Material.glass))
+	public static Block hardyGlass = (new IndustrialGlass(1551, 32, Material.glass))
 			.setHardness(1.0F).setStepSound(Block.soundGlassFootstep)
 			.setBlockName("industrialGlass").setCreativeTab(CreativeTabs.tabDecorations);
 	
