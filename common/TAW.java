@@ -1,15 +1,10 @@
 package jw.taw.common;
 
+import jw.taw.common.block.Blocks;
+import jw.taw.common.item.Items;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.EnumToolMaterial;
-import net.minecraft.src.ModLoader;
-import net.minecraft.item.*;
-import net.minecraftforge.common.EnumHelper;
-import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -21,10 +16,6 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
-import jw.taw.common.CommonProxy;
-import jw.taw.common.block.Blocks;
-import jw.taw.common.item.Items;
 
 @Mod(modid="TAW", name="Tools and Weapons Mod", version="0.0.0")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)

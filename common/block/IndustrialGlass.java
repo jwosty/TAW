@@ -2,9 +2,9 @@ package jw.taw.common.block;
 
 import java.util.Random;
 
+import jw.taw.common.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import jw.taw.common.CommonProxy;
 
 public class IndustrialGlass extends Block {
 	public IndustrialGlass(int par1, int par2, Material par3Material) {
