@@ -16,14 +16,17 @@ public class IndustrialGlass extends Block {
 		return CommonProxy.TEXTURES_PNG;
 	}
 	
+	@Override
 	public boolean isOpaqueCube() {
 		return false;
 	}
 	
+	@Override
 	public boolean renderAsNormalBlock() {
 		return false;
 	}
 	
+	@Override
 	public int idDropped(int par1, Random random, int zero) {
 		return Block.glass.blockID;
 	}
