@@ -32,7 +32,7 @@ public class Items {
 	public static Item swordObsidian = new ItemSword(1554, ObsidianTools).setIconIndex(3).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianSword");
 	public static Item hoeObsidian = new ItemHoe(1555, ObsidianTools).setIconIndex(4).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianHoe");
 	
-	public static Item industrialGlassMaterials = new Item(1556).setIconIndex(16).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("industrialGlassMaterials");
+	public static Item industrialGlassMaterials = new Item(1556).setIconCoord(0, 2).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("industrialGlassMaterials");
 	public static Item shovelGlass = new ItemSpade(1557, GlassTools).setIconIndex(5).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassShovel");
 	public static Item pickaxeGlass = new ItemPickaxe(1558, GlassTools).setIconIndex(6).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassPickaxe");
 	public static Item axeGlass = new ItemAxe(1559, GlassTools).setIconIndex(7).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("glassAxe");
@@ -44,6 +44,9 @@ public class Items {
 	public static Item axeEnder = new ItemAxe(1564, EnderTools).setIconIndex(12).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("enderAxe");
 	public static Item swordEnder = new ItemSword(1565, EnderTools).setIconIndex(13).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("enderSword");
 	public static Item hoeEnder = new ItemSword(1566, EnderTools).setIconIndex(14).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("enderHoe");
+	
+	public static Item rawTrinium = new Item(1568).setIconCoord(1, 2).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("rawTrinium");
+	public static Item ingotTrinium = new Item(1569).setIconCoord(2, 2).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("ingotTrinium");
 	
 	// Loads all the new items and tools
 	public static void registerAllItems() {
@@ -58,7 +61,8 @@ public class Items {
 	
 	public static void addItems() {
 		LanguageRegistry.addName(industrialGlassMaterials, "Industrial Glass Materials");
-	
+		LanguageRegistry.addName(rawTrinium, "Unprocessed Trinium");
+		LanguageRegistry.addName(ingotTrinium, "Trinium Ingot");
 	}
 	
 	public static void addItemRecipes() {
