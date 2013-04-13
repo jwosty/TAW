@@ -30,9 +30,9 @@ public class TriniumOreGenerator implements IWorldGenerator {
 	private void generateSurface(World world, Random random, int i, int j) {
 		for(int k = 0; k < 3; k++) {
 			int firstBlockXCoord = i + random.nextInt(16);
-			int firstBlockYCoord = random.nextInt(64);
+			int firstBlockYCoord = random.nextInt(36);
 			int firstBlockZCoord = j + random.nextInt(16);
-			(new WorldGenMinable(Blocks.oreTrinium.blockID, 30)).generate(world, random, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
+			(new WorldGenMinable(Blocks.oreTrinium.blockID, 6)).generate(world, random, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
 		}
 	}
 

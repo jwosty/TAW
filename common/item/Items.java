@@ -61,6 +61,8 @@ public class Items {
 	public static Item swordTrinium = new ItemSword(1560, GlassTools).setIconCoord(3, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumSword");
 	public static Item hoeTrinium = new ItemHoe(1561, GlassTools).setIconCoord(4, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumHoe");
 	
+	
+	
 	// Loads all the new items and tools
 	public static void registerAllItems() {
 		registerItems();
