@@ -1,10 +1,13 @@
 package jw.taw.common;
 
+import java.util.Random;
+
 import jw.taw.common.block.Blocks;
 import jw.taw.common.item.Items;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -33,8 +36,9 @@ public class TAW {
 	}
 	
 	@Init
-	public void load(FMLInitializationEvent event) {
+	public void init(FMLInitializationEvent event) {
 		proxy.registerRenderers();
+		GameRegistry.registerWorldGenerator(new TriniumOreGenerator());
 		Blocks.addBlocks();
 		Items.registerAllItems();
 		addRecipes();

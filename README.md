@@ -7,13 +7,13 @@ The currently implemented features for Mincraft are as follows:
   * The recipe for "Industrial Glass Materials" (iron ingot surrounded by glass blocks)
 * Obsidian tools
 * Ender tools (made of Eyes of Ender)
+* [Trinium](http://en.wikipedia.org/wiki/Trinium#Trinium) and tools (a fictional element from Stargate that is 100x lighter & stronger than steel)
 
 ##Planned Features
 I am planning on adding the following (in order of priority):
 
-1. [Trinium](http://en.wikipedia.org/wiki/Trinium#Trinium) and tools (a fictional element from Stargate that is 100x lighter & stronger than steel)
-2. The Ender Pickaxe will be able to harvest monster spawners (no easy way to do this; not coming any time soon)
-3. 
+1. The Ender Pickaxe will be able to harvest monster spawners (no easy way to do this; not coming any time soon)
+2. 
    * Possibly emerald tools 
    * Possibly ice tools as an alternative to wood tools
 
