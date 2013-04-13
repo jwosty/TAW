@@ -58,8 +58,8 @@ public class Items {
 	public static Item shovelTrinium = new ItemSpade(1570, TriniumTools).setIconCoord(0, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumShovel");
 	public static Item pickaxeTrinium = new ItemPickaxe(1571, GlassTools).setIconCoord(1, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumPickaxe");
 	public static Item axeTrinium = new ItemAxe(1572, GlassTools).setIconCoord(2, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumAxe");
-	public static Item swordTrinium = new ItemSword(1560, GlassTools).setIconCoord(3, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumSword");
-	public static Item hoeTrinium = new ItemHoe(1561, GlassTools).setIconCoord(4, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumHoe");
+	public static Item swordTrinium = new ItemSword(1573, GlassTools).setIconCoord(3, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumSword");
+	public static Item hoeTrinium = new ItemHoe(1574, GlassTools).setIconCoord(4, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumHoe");
 	
 	
 	
