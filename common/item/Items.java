@@ -72,6 +72,9 @@ public class Items {
 	
 	public static void addItemRecipes() {
 		GameRegistry.addRecipe(new ItemStack(industrialGlassMaterials, 4), "XXX", "XYX", "XXX", 'X', Block.glass, 'Y', Item.ingotIron);
+		// Temporary trinium ingot recipe (will later use custom machine)
+		GameRegistry.addShapelessRecipe(new ItemStack(ingotTrinium),
+				new ItemStack(rawTrinium), new ItemStack(Item.bucketWater));
 	}
 	
 	// Register all the new tools into the game
