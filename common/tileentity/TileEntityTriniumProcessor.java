@@ -40,9 +40,12 @@ public class TileEntityTriniumProcessor extends TileEntity implements IInventory
 	}
 
 	@Override
-	public ItemStack getStackInSlotOnClosing(int var1) {
-		// TODO Auto-generated method stub
-		return null;
+	public ItemStack getStackInSlotOnClosing(int slot) {
+		ItemStack stack = this.getStackInSlot(slot);
+		if (stack != null) {
+			this.setInventorySlotContents(slot, null);
+		}
+		return stack;
 	}
 
 	@Override
@@ -55,20 +58,18 @@ public class TileEntityTriniumProcessor extends TileEntity implements IInventory
 
 	@Override
 	public String getInvName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "container.triniumProcessor";
 	}
 
 	@Override
 	public int getInventoryStackLimit() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 64;
 	}
 
 	@Override
-	public boolean isUseableByPlayer(EntityPlayer var1) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isUseableByPlayer(EntityPlayer player) {
+		return worldObj.getBlockTileEntity(xCoord, yCoord, zCoord) == this &&
+			player.getDistanceSq(xCoord + 0.5, yCoord + 0.5, zCoord + 0.5) < 64;
 	}
 
 	@Override
