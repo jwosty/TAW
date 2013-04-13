@@ -1,5 +1,6 @@
 package jw.taw.common.block;
 
+import jw.taw.common.tileentity.TileEntityTriniumProcessor;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -17,6 +18,6 @@ public class BlockTriniumProcessor extends BlockContainer {
 
 	@Override
 	public TileEntity createNewTileEntity(World var1) {
-		return null;
+		return (new TileEntityTriniumProcessor());
 	}
 }
