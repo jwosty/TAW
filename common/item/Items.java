@@ -55,7 +55,11 @@ public class Items {
 	
 	public static Item rawTrinium = new Item(1568).setIconCoord(1, 2).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("rawTrinium");
 	public static Item ingotTrinium = new Item(1569).setIconCoord(2, 2).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("ingotTrinium");
-	
+	public static Item shovelTrinium = new ItemSpade(1570, TriniumTools).setIconCoord(0, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumShovel");
+	public static Item pickaxeTrinium = new ItemPickaxe(1571, GlassTools).setIconCoord(1, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumPickaxe");
+	public static Item axeTrinium = new ItemAxe(1572, GlassTools).setIconCoord(2, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumAxe");
+	public static Item swordTrinium = new ItemSword(1560, GlassTools).setIconCoord(3, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumSword");
+	public static Item hoeTrinium = new ItemHoe(1561, GlassTools).setIconCoord(4, 1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("triniumHoe");
 	
 	// Loads all the new items and tools
 	public static void registerAllItems() {
@@ -89,6 +93,8 @@ public class Items {
 				shovelGlass, pickaxeGlass, axeGlass, swordGlass, hoeGlass);
 		registerToolset(Item.eyeOfEnder, "Ender", EnderHarvestLevel,
 				shovelEnder, pickaxeEnder, axeEnder, swordEnder, hoeEnder);
+		registerToolset(ingotTrinium, "Trinium", TriniumHarvestLevel,
+				shovelTrinium, pickaxeTrinium, axeTrinium, swordTrinium, hoeTrinium);
 	}
 	
 	// Register a complete tool set and its standard crafting recipes
