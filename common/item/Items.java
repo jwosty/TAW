@@ -29,7 +29,7 @@ public class Items {
 	public static EnumToolMaterial GlassTools = EnumHelper.addToolMaterial("GLASS", GlassHarvestLevel, 250, 7.5F, 2, 18);
 	// Ender tools
 	public static int EnderHarvestLevel = 3;
-	public static EnumToolMaterial EnderTools = EnumHelper.addToolMaterial("ENDER", EnderHarvestLevel, 1561, 8.0F, 4, 22);
+	public static EnumToolMaterial EnderTools = EnumHelper.addToolMaterial("ENDER", EnderHarvestLevel, 1561, 8.0F, 3, 22);
 	
 	public static Item shovelObsidian = new ItemSpade(1551, ObsidianTools).setIconIndex(0).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianShovel");
 	public static Item pickaxeObsidian = new ItemPickaxe(1552, ObsidianTools).setIconIndex(1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianPickaxe");

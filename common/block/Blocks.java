@@ -3,6 +3,7 @@ package jw.taw.common.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -19,5 +20,7 @@ public class Blocks {
 		LanguageRegistry.addName(hardyGlass, "Industrial Glass");
 		GameRegistry.registerBlock(oreTrinium, "oreTrinium");
 		LanguageRegistry.addName(oreTrinium, "Trinium Ore");
+		
+		MinecraftForge.setBlockHarvestLevel(oreTrinium, "pickaxe", 2);
 	}
 }
