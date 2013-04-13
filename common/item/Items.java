@@ -24,12 +24,15 @@ public class Items {
 	// Obsidian tools, with a harvest speed of 7.75 -- almost as fast as diamond (which is 8)
 	public static int ObsidianHarvestLevel = 3;
 	public static EnumToolMaterial ObsidianTools = EnumHelper.addToolMaterial("OBSIDIAN", ObsidianHarvestLevel, 1561, 8.0F, 2, 10);
-	// Glass tools; basically halfway between iron and diamond but with a higher enchantability than both
+	// Glass tools; basically halfway between iron and diamond but with a higher enchantability than both, and with uses between iron and diamond
 	public static int GlassHarvestLevel = 2;
-	public static EnumToolMaterial GlassTools = EnumHelper.addToolMaterial("GLASS", GlassHarvestLevel, 250, 7.5F, 2, 18);
+	public static EnumToolMaterial GlassTools = EnumHelper.addToolMaterial("GLASS", GlassHarvestLevel, 512, 7.5F, 2, 18);
 	// Ender tools
 	public static int EnderHarvestLevel = 3;
-	public static EnumToolMaterial EnderTools = EnumHelper.addToolMaterial("ENDER", EnderHarvestLevel, 1561, 8.0F, 3, 22);
+	public static EnumToolMaterial EnderTools = EnumHelper.addToolMaterial("ENDER", EnderHarvestLevel, 512, 8.0F, 3, 22);
+	// Trinium tools
+	public static int TriniumHarvestLevel = 3;
+	public static EnumToolMaterial TriniumTools = EnumHelper.addToolMaterial("TRINIUM", TriniumHarvestLevel, 1024, 8.0F, 3, 10);
 	
 	public static Item shovelObsidian = new ItemSpade(1551, ObsidianTools).setIconIndex(0).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianShovel");
 	public static Item pickaxeObsidian = new ItemPickaxe(1552, ObsidianTools).setIconIndex(1).setTextureFile(CommonProxy.TEXTURES_PNG).setItemName("obsidianPickaxe");
@@ -52,6 +55,7 @@ public class Items {
 	
 	public static Item rawTrinium = new Item(1568).setIconCoord(1, 2).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("rawTrinium");
 	public static Item ingotTrinium = new Item(1569).setIconCoord(2, 2).setTextureFile(CommonProxy.TEXTURES_PNG).setCreativeTab(CreativeTabs.tabMaterials).setItemName("ingotTrinium");
+	
 	
 	// Loads all the new items and tools
 	public static void registerAllItems() {
