@@ -27,7 +27,7 @@ public class TAW {
 	@Instance("TAW")
 	public static TAW instance;
 	
-	@SidedProxy(clientSide="jw.taw.client.ClientProxy", serverSide="jw.taw.CommonProxy")
+	@SidedProxy(clientSide="jw.taw.client.ClientProxy", serverSide="jw.taw.common.CommonProxy")
 	public static CommonProxy proxy;
 	
 	@PreInit
