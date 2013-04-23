@@ -3,10 +3,12 @@ package jw.taw.common.tileentity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityTriniumProcessor extends TileEntity implements IInventory {
-	// The item stacks being used in the processor (fuel, water, input, and output)
+	// The item stacks being used in the processor ([0] = fuel, [1] = water, [2] = input, and [3] = output)
 	private ItemStack[] inv = new ItemStack[4];
 	// The number of ticks left until the machine finish processing the trinium
 	private int processingTime = 0;
@@ -58,7 +60,7 @@ public class TileEntityTriniumProcessor extends TileEntity implements IInventory
 
 	@Override
 	public String getInvName() {
-		return "container.triniumProcessor";
+		return "taw.triniumProcessor";
 	}
 
 	@Override
@@ -78,5 +80,58 @@ public class TileEntityTriniumProcessor extends TileEntity implements IInventory
 	@Override
 	public void closeChest() {}
 	
+	@Override
+	public void readFromNBT(NBTTagCompound tagCompound) {
+		super.readFromNBT(tagCompound);
+		
+		NBTTagList itemList = tagCompound.getTagList("Items");
+		for (int i = 0; i < itemList.tagCount(); i++) {
+			NBTTagCompound tag = (NBTTagCompound) itemList.tagAt(i);
+			byte slot = tag.getByte("Slot");
+			if (slot >= 0 && slot < inv.length) {
+				inv[slot] = ItemStack.loadItemStackFromNBT(tag);
+			}
+		}
+	}
 	
+	@Override
+	public void writeToNBT(NBTTagCompound tagCompound) {
+		super.writeToNBT(tagCompound);
+		
+		NBTTagList itemList = new NBTTagList();
+		for (int i = 0; i < inv.length; i++) {
+			ItemStack stack = inv[i];
+			if (stack != null) {
+				NBTTagCompound tag = new NBTTagCompound();
+				tag.setByte("Slot", (byte) i);
+				stack.writeToNBT(tag);
+				itemList.appendTag(tag);
+			}
+		}
+		tagCompound.setTag("Inventory", itemList);
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
