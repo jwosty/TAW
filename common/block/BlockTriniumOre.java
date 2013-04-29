@@ -15,9 +15,4 @@ public class BlockTriniumOre extends BlockOre {
 	public String getTextureFile() {
 		return CommonProxy.TEXTURES_PNG;
 	}
-	
-	@Override
-	public int idDropped(int par1, Random random, int zero) {
-		return Items.rawTrinium.itemID;
-	}
 }
