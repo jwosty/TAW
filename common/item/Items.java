@@ -90,9 +90,6 @@ public class Items {
 		GameRegistry.addShapelessRecipe(new ItemStack(ingotTrinium),
 				new ItemStack(rawTrinium), new ItemStack(Item.bucketWater));
 		String[] ores = OreDictionary.getOreNames();
-		for (int i = 0; i < ores.length; i++) {
-			java.lang.System.out.println("Found OreDictionary entry: " + ores[i]);
-		}
 		GameRegistry.addRecipe(new ShapedOreRecipe(Item.bucketMilk, true,
 				"XX", 'X', "ingotTrinium"));
 	}
