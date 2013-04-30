@@ -82,7 +82,7 @@ public class Items {
 	
 	public static void addItemRecipes() {
 		GameRegistry.addRecipe(new ItemStack(industrialGlassMaterials, 4), "XXX", "XYX", "XXX", 'X', Block.glass, 'Y', Item.ingotIron);
-		// Temporary trinium ingot recipe (will later use custom machine)
+		GameRegistry.addSmelting(Blocks.oreTrinium.blockID, new ItemStack(rawTrinium), 0.5f);
 		GameRegistry.addShapelessRecipe(new ItemStack(ingotTrinium),
 				new ItemStack(rawTrinium), new ItemStack(Item.bucketWater));
 	}
@@ -112,7 +112,6 @@ public class Items {
 		MinecraftForge.setToolClass(pickaxe, "pickaxe", harvestLevel);
 		MinecraftForge.setToolClass(axe, "axe", harvestLevel);
 		// Register the tool names
-		// Not sure about the difference between this and Item.setItemName(string name)
 		ModLoader.addName(shovel, matName + " Shovel");
 		ModLoader.addName(pickaxe, matName + " Pickaxe");
 		ModLoader.addName(axe, matName + " Axe");
