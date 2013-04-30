@@ -20,7 +20,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid="TAW", name="Tools and Weapons Mod", version="0.5.0")
+@Mod(modid="TAW", name="Tools and Weapons Mod", version="0.5.1")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 public class TAW {
 	// The instance of this mod that Forge uses

@@ -15,6 +15,8 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.src.ModLoader;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -78,6 +80,8 @@ public class Items {
 		LanguageRegistry.addName(industrialGlassMaterials, "Industrial Glass Materials");
 		LanguageRegistry.addName(rawTrinium, "Unprocessed Trinium");
 		LanguageRegistry.addName(ingotTrinium, "Trinium Ingot");
+		// Probably don't need ore dictionary here, but it can't hurt!
+		OreDictionary.registerOre("ingotTrinium", new ItemStack(ingotTrinium));
 	}
 	
 	public static void addItemRecipes() {
@@ -85,6 +89,12 @@ public class Items {
 		GameRegistry.addSmelting(Blocks.oreTrinium.blockID, new ItemStack(rawTrinium), 0.5f);
 		GameRegistry.addShapelessRecipe(new ItemStack(ingotTrinium),
 				new ItemStack(rawTrinium), new ItemStack(Item.bucketWater));
+		String[] ores = OreDictionary.getOreNames();
+		for (int i = 0; i < ores.length; i++) {
+			java.lang.System.out.println("Found OreDictionary entry: " + ores[i]);
+		}
+		GameRegistry.addRecipe(new ShapedOreRecipe(Item.bucketMilk, true,
+				"XX", 'X', "ingotTrinium"));
 	}
 	
 	// Register all the new tools into the game
@@ -95,7 +105,7 @@ public class Items {
 				shovelGlass, pickaxeGlass, axeGlass, swordGlass, hoeGlass);
 		registerToolset(Item.eyeOfEnder, "Ender", EnderHarvestLevel,
 				shovelEnder, pickaxeEnder, axeEnder, swordEnder, hoeEnder);
-		registerToolset(ingotTrinium, "Trinium", TriniumHarvestLevel,
+		registerToolset("ingotTrinium", "Trinium", TriniumHarvestLevel,
 				shovelTrinium, pickaxeTrinium, axeTrinium, swordTrinium, hoeTrinium);
 	}
 	
@@ -123,25 +133,26 @@ public class Items {
 	// Create the standard recipes for the complete set of tools (shovel, pickaxe, axe, sword, and hoe) using the given material and resulting items
 	public static void addToolsetRecipes(Object craftingMaterial, Item shovel, Item pickaxe, Item axe, Item sword, Item hoe) {
 		Item stk = Item.stick;
-		GameRegistry.addRecipe(new ItemStack(shovel),
+		GameRegistry.addRecipe(new ShapedOreRecipe(shovel, true,
 				"#", "X", "X",
 				'#', craftingMaterial,
-				'X', stk);
-		GameRegistry.addRecipe(new ItemStack(pickaxe),
+				'X', stk));
+		GameRegistry.addRecipe(new ShapedOreRecipe(pickaxe,
 				"###", " X ", " X ",
 				'#', craftingMaterial,
-				'X', stk);
-		GameRegistry.addRecipe(new ItemStack(axe),
+				'X', stk));
+		GameRegistry.addRecipe(new ShapedOreRecipe(axe,
 				"##", "#X", " X",
 				'#', craftingMaterial,
-				'X', stk);
-		GameRegistry.addRecipe(new ItemStack(sword),
+				'X', stk));
+		GameRegistry.addRecipe(new ShapedOreRecipe(sword,
 				"#", "#", "X",
 				'#', craftingMaterial,
-				'X', stk);
-		GameRegistry.addRecipe(new ItemStack(hoe),
+				'X', stk));
+		GameRegistry.addRecipe(new ShapedOreRecipe(hoe,
 				"##", " X", " X",
 				'#', craftingMaterial,
-				'X', stk);
+				'X', stk));
+		
 	}
 }
